@@ -17,7 +17,7 @@ the RACK\_ENV env var is set to 'deployment' or 'development', i.e. not 'product
 The online documentation [2] disagrees about this with the
 `Documentation/rainbows.1.txt` in the official git repo [3].
 
-Apparently, this is almost a FAQ [3].
+Apparently, this is almost a FAQ [4].
 
 # Usage
 
