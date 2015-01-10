@@ -12,7 +12,9 @@ The server closing the connection to indicate the end of the body is a correct b
 in the absence of the headers [1].
 
 Rainbows includes the Rack middleware that adds these headers, but only when
-the RACK\_ENV env var is set to 'deployment' or 'development', i.e. not 'production'.
+the RACK\_ENV env var is set to 'deployment' or 'development', i.e. not 'production' [2].
+
+Apparently, this is almost a FAQ [3].
 
 # Usage
 
@@ -31,3 +33,7 @@ Otherwise, the body length is determined by the Transfer-Encoding (if the
 "chunked" transfer coding has been applied), by the Content-Type (for multipart
 types with an explicit end-of-body delimiter), or by the server closing the
 connection.
+
+[2] http://rainbows.bogomips.org/rainbows.1.html#rack-environment
+
+[3] http://bogomips.org/rainbows-public/m/20140704195032.GA13152%40dcvr.yhbt.net.html
